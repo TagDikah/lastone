@@ -1,0 +1,136 @@
+/* General Styling for the Page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6; /* Added for better readability */
+}
+
+header {
+    background: #004466;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 4px solid #006699; /* Subtle border under the header for separation */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background: #006699;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 15px; /* Adds padding around links */
+    border-radius: 20px; /* Slight rounding of the navigation links */
+    transition: background-color 0.3s ease; /* Smooth background color change on hover */
+}
+
+nav ul li a:hover {
+    background-color: #004466; /* Change background on hover for navigation */
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for sections */
+    border-radius: 10px; /* Rounded corners for sections */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition for hover effect */
+}
+
+section:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Bigger shadow on hover */
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px; /* Adds space below headers */
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase; /* Capitalizes the heading */
+}
+
+/* Payment Section Styling */
+#payments {
+    margin-top: 40px;
+    background: #f9f9f9; /* Light background color for the payment section */
+    padding: 30px 0; /* Adds padding around the section */
+    border-radius: 8px; /* Rounded corners for the payment section */
+}
+
+.payment-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Adds space between payment options */
+}
+
+/* Payment Method Styling */
+.payment-method {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px; /* Added padding inside each payment method */
+    border-radius: 8px; /* Rounded corners for payment method boxes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scale and shadow transition */
+    background-color: #fff; /* Ensures payment method box has white background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+.payment-method i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.payment-method p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Hover effect for payment method */
+.payment-method:hover {
+    cursor: pointer;  /* Change cursor to pointer */
+    transform: scale(1.1); /* Increase size on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background: #004466;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px; /* Smaller font for footer */
+}
+
+/* Responsive Design: Smaller Screens */
+@media (max-width: 768px) {
+    .payment-options {
+        flex-direction: column; /* Stack payment methods on smaller screens */
+        align-items: center;
+    }
+
+    .payment-method {
+        width: 80%; /* Make payment method boxes a bit larger on small screens */
+        margin-bottom: 20px; /* Space between stacked payment methods */
+    }
+}

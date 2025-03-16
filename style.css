@@ -1,0 +1,201 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #004466;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background: #006699;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Banner Section (Home Page Background) */
+.banner {
+    background: linear-gradient(to bottom, rgba(0, 68, 102, 0.8), rgba(0, 102, 153, 0.8)), 
+                url('background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    background: white;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #004466;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Images */
+/* General Image Styling */
+img {
+    width: 132px; /* Increased size by 5% from 126px */
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+    image-rendering: crisp-edges; /* Ensures clear images on scaling */
+}
+
+/* Image Hover Effect */
+img:hover {
+    transform: scale(1.1); /* Slightly enlarges the image on hover */
+}
+
+/* Service Images */
+.service-images {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.service-images img {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 231px; /* Increased size by 5% from 220px */
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 5px;
+    transition: transform 0.3s ease;
+}
+
+.service-images img:hover {
+    transform: scale(1.1); /* Slightly enlarges the image on hover */
+}
+
+/* Paragraph Styling */
+p5 {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    padding-bottom: 44%;
+    padding-top: 15px;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Blinking Text Animation */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blink-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff0000; /* Red text color */
+    animation: blink 2s infinite;
+}
+
+/* Video Container */
+.service-video {
+    margin: 30px 0;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Video Styling */
+.service-video video {
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 100%; /* Ensures responsiveness */
+    height: auto;
+}
+
+/* Ensuring content appears directly below the video */
+.service-video h3 {
+    font-size: 1.8rem;
+}
+
+/* Service Video and Steps Container */
+.service-container {
+    display: flex;
+    justify-content: space-between; /* Aligns the video and steps side by side */
+    align-items: flex-start; /* Aligns the items at the top */
+    gap: 30px; /* Adds space between the video and steps */
+    margin: 30px 0;
+}
+
+/* Service Steps (Right side of the video) */
+.service-steps {
+    flex: 1; /* Makes the steps container take up available space */
+    display: flex;
+    flex-direction: column; /* Aligns the steps vertically */
+    justify-content: flex-start; /* Aligns steps to the top */
+    gap: 20px; /* Adds space between each step */
+}
+
+/* Individual Step Styling */
+.service-steps .step {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-steps .step:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Adjust the Paragraph Styling (For text on right) */
+p5 {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    padding-bottom: 44%;
+    padding-top: 15px;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
